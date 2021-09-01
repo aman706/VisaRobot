@@ -2,8 +2,8 @@ import threading
 
 from sqlalchemy import Column, String, UnicodeText, Boolean, Integer, distinct, func
 
-from AsunaRobot.modules.helper_funcs.msg_types import Types
-from AsunaRobot.modules.sql import BASE, SESSION
+from VisaRobot.modules.helper_funcs.msg_types import Types
+from VisaRobot.modules.sql import BASE, SESSION
 
 
 class CustomFilters(BASE):
