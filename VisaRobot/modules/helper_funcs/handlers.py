@@ -1,6 +1,6 @@
-import AsunaRobot.modules.sql.blacklistusers_sql as sql
-from AsunaRobot import ALLOW_EXCL
-from AsunaRobot import DEV_USERS, DRAGONS, DEMONS, TIGERS, WOLVES
+import VisaRobot.modules.sql.blacklistusers_sql as sql
+from VisaRobot import ALLOW_EXCL
+from VisaRobot import DEV_USERS, DRAGONS, DEMONS, TIGERS, WOLVES
 
 from telegram import Update
 from telegram.ext import CommandHandler, MessageHandler, RegexHandler, Filters
