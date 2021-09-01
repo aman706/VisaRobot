@@ -1,3 +1,3 @@
-worker: python3 -m AsunaRobot
-web: python3 -m AsunaRobot
+worker: python3 -m VisaRobot
+web: python3 -m VisaRobot
 ps:scale worker=1
