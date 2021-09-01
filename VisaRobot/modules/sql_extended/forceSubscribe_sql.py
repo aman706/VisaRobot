@@ -1,5 +1,5 @@
 from sqlalchemy import Column, String, Numeric, Boolean
-from AsunaRobot.modules.sql import BASE, SESSION
+from VisaRobot.modules.sql import BASE, SESSION
 
 
 class forceSubscribe(BASE):
