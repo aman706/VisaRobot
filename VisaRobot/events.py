@@ -1,5 +1,5 @@
 from telethon import events
-from AsunaRobot import telethn
+from VisaRobot import telethn
 
 
 def register(**args):
