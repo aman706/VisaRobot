@@ -1,4 +1,4 @@
-from AsunaRobot import telethn as tbot
+from VisaRobot import telethn as tbot
 import requests
 import time
 
