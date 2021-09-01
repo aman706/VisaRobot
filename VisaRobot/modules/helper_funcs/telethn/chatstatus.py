@@ -1,5 +1,5 @@
-from AsunaRobot.modules.helper_funcs.telethn import IMMUNE_USERS, telethn
-from AsunaRobot import DRAGONS
+from VisaRobot.modules.helper_funcs.telethn import IMMUNE_USERS, telethn
+from VisaRobot import DRAGONS
 from telethon.tl.types import ChannelParticipantsAdmins
 
 
