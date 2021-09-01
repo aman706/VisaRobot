@@ -12,8 +12,8 @@ from pyrogram import Client
 from pyrogram.errors import FloodWait, MessageNotModified
 from pyrogram.types import Chat, Message, User
 
-from AsunaRobot  import OWNER_ID, SUPPORT_CHAT
-from AsunaRobot import pbot
+from VisaRobot  import OWNER_ID, SUPPORT_CHAT
+from VisaRobot import pbot
 
 
 def get_user(message: Message, text: str) -> [int, str, None]:
