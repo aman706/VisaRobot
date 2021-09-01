@@ -1,6 +1,6 @@
 import sys
 from envparse import env
-from AsunaRobot import LOGGER
+from VisaRobot import LOGGER
 
 DEFAULTS = {
     "LOAD_MODULES": True,
