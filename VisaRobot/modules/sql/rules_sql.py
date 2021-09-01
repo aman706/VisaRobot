@@ -1,6 +1,6 @@
 import threading
 
-from AsunaRobot.modules.sql import BASE, SESSION
+from VisaRobot.modules.sql import BASE, SESSION
 from sqlalchemy import Column, String, UnicodeText, distinct, func
 
 
