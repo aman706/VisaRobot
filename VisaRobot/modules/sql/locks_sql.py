@@ -3,7 +3,7 @@ import threading
 
 from sqlalchemy import Column, String, Boolean
 
-from AsunaRobot.modules.sql import SESSION, BASE
+from VisaRobot.modules.sql import SESSION, BASE
 
 
 class Permissions(BASE):
