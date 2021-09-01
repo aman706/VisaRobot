@@ -1,6 +1,6 @@
-from AsunaRobot import telethn as tbot
+from VisaRobot import telethn as tbot
 import os
-from AsunaRobot.events import register
+from VisaRobot.events import register
 import secureme
 
 @register(pattern="^/encrypt ?(.*)")
