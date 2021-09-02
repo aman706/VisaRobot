@@ -79,3 +79,4 @@ async def spammers(event):
             if (datetime.now() - ttime).seconds > 86400:
                 spammers.delete_one({"id": event.sender_id})
             else:
+                return
