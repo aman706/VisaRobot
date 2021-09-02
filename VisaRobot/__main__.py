@@ -74,58 +74,58 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-`Hello` [🌺](https://telegra.ph/file/5c9c60b5360a9a31896a0.jpg) `My name is` *Asuna*
-`I am powerful  group management bot.
-Build by The Ghost Hunter for Your Telegram Group , I specialize in managing Entertainment type groups.
-You can find my list of available commands with! Hit` *📚Commands*   
+`ʜᴇււο` [🌺](https://telegra.ph/file/62a0aa7cc209b004149df.jpg) `ϻ𝞬 ɴѧϻᴇ ɪ𝒔 ` *𝘃ɪ𝒔ѧ*
+`ɪ ѧϻ ᴩο𝐰ᴇʀғυււ ɢʀουᴩ ϻѧɴѧɢᴇϻᴇɴ𝞽 ʙο𝞽.
+ʙυɪւᴅ ʙ𝞬 ϲѧււ ϻᴇ 𝘃ᴩ ғοʀ 𝞬ουʀ 𝞽ᴇւᴇɢʀѧϻ ɢʀουᴩ, ɪ 𝒔ᴩᴇϲɪѧւɪ𝒛ᴇ ɪɴ ϻѧɴѧɢɪɴɢ ᴇɴ𝞽ᴇʀ𝞽ѧɪɴϻᴇɴ𝞽 𝞽𝞬ᴩᴇ ɢʀουᴩ𝒔.
+𝞬ου ϲѧɴ ғɪɴᴅ ϻ𝞬 ւɪ𝒔𝞽 οғ ѧ𝘃ѧɪւѧʙւᴇ ϲοϻϻѧɴᴅ𝒔 𝐰ɪ𝞽ʜ! ʜɪ𝞽` *📚ϲοϻϻѧɴᴅ𝒔*📚   
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕️ ADD YONE TO YOUR GROUP ➕️",url="t.me/My_Asuna_Robot?startgroup=true"),
+            text="➕️ ADD 𝓥 𝓘 𝓢 𝓐 TO YOUR GROUP ➕️",url="t.me/MissVisaRobot?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="ℹ️ ABOUT", callback_data="asuna_"),
-        InlineKeyboardButton(text="📚 COMMANDS", callback_data="help_back"),
+        InlineKeyboardButton(text="ℹ️ ѧʙου𝞽", callback_data="visa"),
+        InlineKeyboardButton(text="📚 ϲοϻϻѧɴᴅ𝒔", callback_data="help_back"),
      
     ],
     [     InlineKeyboardButton(
-            text="🤴 OWNER", url="https://telegram.dog/The_Ghost_Hunter"),
+            text="🤴 ο𝐰ɴᴇʀ", url="https://telegram.dog/CALL_ME_VP"),
     
     ],
     [
         InlineKeyboardButton(
-            text="📺 Star Wolrd Entertainment", url="https://telegram.dog/fire_world_entertainment"),
+            text="📺 ᴇ𝘃ᴇʀ𝞬οɴᴇ'𝒔 ϻѧ𝞽𝞽ᴇʀ", url="https://telegram.dog/WeGetTogether"),
     ],
     [
         InlineKeyboardButton(
-            text="📕 Logis", url="https://t.me/AsunaLogUpdate"),
+            text="📕 ϲʜѧɴɴᴇւ", url="https://t.me/Visa_Update"),
           
 
 
 InlineKeyboardButton(
-            text="👥 SUPPORT", url="https://telegram.dog/AsunaRobotSupport"
+            text="👥 𝒔υᴩᴩοʀ𝞽", url="https://telegram.dog/Visa_Support"
         ),
 
     ],
     [
         InlineKeyboardButton(
-                    text="💟 Source Code", url="https://github.com/HuntingBots/AsunaRobot"
+                    text="💟 𝒔ουʀϲᴇ ϲοᴅᴇ", url="https://github.com/callmevp/VisaRobot"
         ),
     ],
 ]
 
 
 HELP_STRINGS = """
-`Hi.. I'm` [Asuna 🛠️]("https://telegra.ph/file/8cab4bb122cf76702b06d.jpg") 
+`Hi.. I'm` [𝘃ɪ𝒔ѧ 🛠️]("https://telegra.ph/file/ffb5667ead3ad40b84d5d.jpg") 
 `Click on the buttons below to get documentation about specific modules..`"""
 
 
-ASUNA_IMG = "https://telegra.ph/file/7e61fe06a9c02747249c4.jpg"
+VISA_IMG = "https://telegra.ph/file/7e61fe06a9c02747249c4.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project via [Paypal](#) or by contacting @a_viyu or @simpleboy786 \
+ You can support the project via [Paypal](#) or by contacting @a_viyu \
  Supporting isnt always financial! \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
@@ -368,11 +368,11 @@ def help_button(update, context):
 
 
 @run_async
-def asuna_about_callback(update, context):
+def visa_about_callback(update, context):
     query = update.callback_query
-    if query.data == "asuna_":
+    if query.data == "visa":
         query.message.edit_text(
-            text=""" ℹ️ I'm *Asuna*, a powerful group management bot built to help you manage your group easily.
+            text=""" ℹ️ I'm *𝘃ɪ𝒔ѧ*, a powerful group management bot built to help you manage your group easily.
                  \n❍ I can restrict users.
                  \n❍ I can greet users with customizable welcome messages and even set a group's rules.
                  \n❍ I have an advanced anti-flood system.
@@ -380,19 +380,19 @@ def asuna_about_callback(update, context):
                  \n❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  \n❍ I check for admins' permissions before executing any command and more stuffs
                  \n\n_shasa's licensed under the GNU General Public License v3.0_
-                 \nHere is the [💾Repository](https://github.com/HuntingBots/AsunaRobot).
-                 \n\nIf you have any question about *Asuna*, let us know at .""",
+                 \nHere is the [💾Repository](https://github.com/callmevp/VisaRobot).
+                 \n\nIf you have any question about *𝘃ɪ𝒔ѧ*, let us know at .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Back", callback_data="asuna_back")
+                    InlineKeyboardButton(text="Back", callback_data="visa_back")
                  ]
                 ]
             ),
         )
-    elif query.data == "asuna_back":
+    elif query.data == "visa_back":
         query.message.edit_text(
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
@@ -407,8 +407,8 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..👸 I'm *Asuna*
-                 \nHere is the [Source Code](https://github.com/HuntingBots/AsunaRobot) .""",
+            text=""" Hi..👸 I'm *𝘃ɪ𝒔ѧ*
+                 \nHere is the [Source Code](https://github.com/calmevp/VisaRobot) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -720,7 +720,7 @@ def main():
     settings_handler = CommandHandler("settings", get_settings)
     settings_callback_handler = CallbackQueryHandler(settings_button, pattern=r"stngs_")
 
-    about_callback_handler = CallbackQueryHandler(asuna_about_callback, pattern=r"asuna_")
+    about_callback_handler = CallbackQueryHandler(visa_about_callback, pattern=r"visa_")
     source_callback_handler = CallbackQueryHandler(Source_about_callback, pattern=r"source_")
 
     donate_handler = CommandHandler("donate", donate)
