@@ -13,7 +13,7 @@ async def awake(event):
   VisaRobot += "**♡ My Master :** [Callmevp](t.me/CALL_ME_VP)\n\n"
   VisaRobot += "**♡ Telethon Version : 1.23.0**\n\n"
   BUTTON = [[Button.url("𝙎𝙐𝙋𝙋𝙊𝙍𝙏", "https://t.me/Visa_Support"), Button.url("𝙐𝙋𝘿𝘼𝙏𝙀", "https://t.me/Visa_Update")]]
-  await tbot.send_file(event.chat_id, PHOTO, caption=PIKACHU,  buttons=BUTTON)
+  await tbot.send_file(event.chat_id, PHOTO, caption=VisaRobot,  buttons=BUTTON)
 
 
 __mod_name__ = "Alive⚜️"
